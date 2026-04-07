@@ -1,0 +1,22 @@
+{
+    "schemaVersion": 1,
+    "id": "kclient",
+    "version": "${version}",
+    "name": "KClient",
+    "description": "High-performance optimization mod for Minecraft. Boost FPS, reduce lag, and enhance gameplay responsiveness.",
+    "authors": ["KClient Team"],
+    "contact": {},
+    "license": "MIT",
+    "icon": "assets/kclient/icon.png",
+    "environment": "client",
+    "entrypoints": {
+        "client": ["com.kclient.KClientMod"]
+    },
+    "mixins": ["kclient.mixins.json"],
+    "depends": {
+        "fabricloader": ">=0.16.0",
+        "minecraft": "~1.21.1",
+        "java": ">=21",
+        "fabric-api": "*"
+    }
+}
